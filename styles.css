@@ -67,7 +67,7 @@ a:hover {
 .logo {
   font-size: 45px;
   font-family: "Andada Pro", serif;
-  font-weight: 840;
+  font-weight: 800;
   color: white;
   margin-bottom: 0;
   padding-left: 5%;
@@ -125,6 +125,10 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.dropdown-button:hover {
+  color: #086788;
 }
 
 .dropdown:hover .dropdown-content {
@@ -205,7 +209,7 @@ aside {
 
 .card-image {
   display: inherit;
-  height: 90px;
+  height: 101%;
   width: 110px;
   object-fit: cover;
 }
@@ -287,7 +291,7 @@ aside {
 
   #header {
     height: 120px;
-    margin-bottom: 0;
+    /* margin-bottom: 10px; */
   }
 
   #header-top {
