@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML/CSS Studio</title>
+    <!-- Lato font embed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Andada Pro font embed -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400..840&display=swap"
+      rel="stylesheet"
+    />
+    <!-- add = #style to end of href to get specific weights and styles: 700 is bold, 400 regular, 300 light, 100 thin-->
+    <!-- import CSS styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <a href="#" style="float: left"
+        ><img
+          id="siteLogo"
+          alt="Ice Stories Logo"
+          src="./assets/ice-stories-logo.png"
+          style="width: 80%; max-width: 200px; margin: 10px"
+        />
+      </a>
+
+      <div id="top-bar">
+        <div id="header-top">
+          <div id="title">
+            <a href="#">
+              <h1 class="logo">ICE STORIES</h1>
+              <span class="logo" id="slogan"
+                >Dispatches from Polar Scientists</span
+              >
+            </a>
+          </div>
+          <a href="#" id="collapsed-menu"
+            ><img src="assets/menu-icon.png" />
+          </a>
+          <div id="extra-navigation">
+            <a href="#"
+              ><img
+                id="exploratorium-logo"
+                alt="Ice Stories Logo"
+                src="assets/new-exploratorium-logo.png"
+                style="width: 200px; margin-top: 10px"
+              />
+            </a>
+            <form id="search-bar">
+              <input type="text" placeholder="Search" />
+              <a href="#"><img src="assets/search-icon.png" /></a>
+            </form>
+          </div>
+        </div>
+
+        <div id="navigation-bar">
+          <div class="dropdown">
+            <a class="dropdown-button" href="#">Home</a>
+          </div>
+          <div class="dropdown">
+            <a class="dropdown-button" href="#">Big Ideas</a>
+            <div class="dropdown-content">
+              <a class="dropdown-menu" href="#">Climate Change</a>
+              <a class="dropdown-menu" href="#">Ice</a>
+              <a class="dropdown-menu" href="#">Astronomy in Antarctica</a>
+              <a class="dropdown-menu" href="#">The South Pole(s)</a>
+              <a class="dropdown-menu" href="#">Antarctic Geology</a>
+              <a class="dropdown-menu" href="#">Penguins</a>
+              <a class="dropdown-menu" href="#">More Ideas >></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="dropdown-button" href="#">Arctic Projects</a>
+            <div class="dropdown-content">
+              <a class="dropdown-menu" href="#">The Bears of Summer</a>
+              <a class="dropdown-menu" href="#">Reading Snowflakes</a>
+              <a class="dropdown-menu" href="#"
+                >Trans Fat, Algae, and Arctic Climate Change</a
+              >
+              <a class="dropdown-menu" href="#">Expedition to Greenland</a>
+              <a class="dropdown-menu" href="#">Breaking the Ice</a>
+              <a class="dropdown-menu" href="#">The Changing Arctic</a>
+              <a class="dropdown-menu" href="#">More Projects >></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="dropdown-button" href="#">Antarctic Projects</a>
+            <div class="dropdown-content">
+              <a class="dropdown-menu" href="#"
+                >Shedding Light on an Ecosystem in the Dark</a
+              >
+              <a class="dropdown-menu" href="#">Wilkes Land Expedition</a>
+              <a class="dropdown-menu" href="#"
+                >First Descents: Exploring Seas Under the Ice</a
+              >
+              <a class="dropdown-menu" href="#"
+                >Monitoring Earth's Atmosphere</a
+              >
+              <a class="dropdown-menu" href="#">Frozen History</a>
+              <a class="dropdown-menu" href="#">Ross Sea Penguins</a>
+              <a class="dropdown-menu" href="#">Under the Glaciers</a>
+              <a class="dropdown-menu" href="#">More Projects >></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a class="dropdown-button" href="#">Polar News</a>
+          </div>
+          <div class="dropdown">
+            <a class="dropdown-button" href="#">About</a>
+            <div class="dropdown-content">
+              <a class="dropdown-menu" href="#">Links</a>
+              <a class="dropdown-menu" href="#">Meet Our Crew</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="entire-content">
+      <main>
+        <article>
+          <h1>Penguins</h1>
+          <figure style="max-width: none">
+            <img
+              src="assets/penguin.jpg"
+              alt="A group of Adélie penguins jumping into the water"
+              style="width: 100%; height: auto"
+            />
+            <figcaption>Adélie penguins, Ross Sea, Antarctica.</figcaption>
+          </figure>
+          <p>
+            Although the penguin is the icon of the Antarctic, many penguins
+            prefer lower latitudes. Several species venture as far south as the
+            Antarctic Peninsula, but only the emperors and the Adélies live
+            along the continental coastline.
+          </p>
+
+          <h2>Adélies</h2>
+          <figure style="float: left">
+            <img src="assets/adelie.jpg" alt="A single Adélie penguin" />
+            <figcaption>An Adélie penguin.</figcaption>
+          </figure>
+          <figure style="float: left">
+            <img src="assets/typical_nest.jpg" alt="A typical Adélie nest." />
+            <figcaption>An Adélie penguin.</figcaption>
+          </figure>
+          <p>
+            If you were to conjure up an image of a penguin, it would probably
+            look quite a lot like an Adélie: With a black back and white front,
+            it’s the archetypical tuxedo-clad penguin. Named for Adéle, the wife
+            of French explorer Admiral Durmont d’Urville, the Adélie is also one
+            of the best-studied penguins.
+          </p>
+          <p>
+            Adélies spend most of the year at sea, but in October, when spring
+            comes to Antarctica, they head for dry land on which to build nests,
+            mate, lay eggs, and raise their chicks. An Adélie nest is lined with
+            small stones. Prize pebbles are squabbled over and often purloined
+            from inattentive neighbors.
+          </p>
+          <p>
+            In early November, the female lays two eggs and returns to the sea
+            to feed, leaving the male to be the eggs’ first caretaker. The
+            parents take turns incubating the eggs though, which hatch in about
+            35 days, and they continue to alternate between gathering food and
+            watching over the young chicks.
+          </p>
+          <figure style="float: right">
+            <img
+              src="assets/kd_begging_chick_sm.jpg"
+              alt="A single Adélie penguin"
+            />
+            <figcaption>A newly hatched Adélie.</figcaption>
+          </figure>
+          <figure style="float: right">
+            <img src="assets/penguin-1.jpg" alt="A typical Adélie nest." />
+            <figcaption>A young Adélie with a full stomach.</figcaption>
+          </figure>
+          <p>
+            Finally, the growing chicks, too hungry to be provisioned by just
+            one parent at a time, are left together in a tightly packed group
+            called a crèche, while both parents go hunting. In February, the
+            juveniles exchange their down coats for seaworthy adult feathers
+            and, along with the adults, soon leave the breeding ground for the
+            pack ice.
+          </p>
+          <p>
+            Adélies breed in a number of places along the Antarctic coast, from
+            the Ross Sea in the south to the Antarctic Peninsula far to the
+            north. The southernmost quartet of colonies—at Cape Crozier, Cape
+            Bird, and Cape Royds on Ross Island and another on Beaufort
+            Island—differ from each other in size, weather, and distance from
+            the open sea. Cape Crozier, known as Penguin City, is by far the
+            largest, with about 150,000 breeding pairs. The trip from Penguin
+            City to the ocean is a short one, but the large number of birds
+            means that competition for food is intense. Life is more of a picnic
+            for the penguins in the smaller colonies, even if they must walk a
+            bit farther to reach the food.
+          </p>
+          <figure style="float: left">
+            <img src="assets/cpbird-subs.jpg" alt="A single Adélie penguin" />
+            <figcaption>Adélie penguins at Cape Bird.</figcaption>
+          </figure>
+          <figure style="float: left">
+            <img src="assets/watersrising2.jpg" alt="A typical Adélie nest." />
+            <figcaption>
+              An Adélie tries in vain to rescue its eggs from rising glacial
+              meltwater.
+            </figcaption>
+          </figure>
+          <p>
+            In general, though, all the Ross Sea Adélies are doing well. Climate
+            change has brought stronger winds that keep the water near the shore
+            almost free of ice, making feeding areas more accessible. A warmer
+            climate is benefiting these penguins—for the moment. But if
+            temperatures continue to climb, these birds will face the severe
+            problems being experienced by the Adélie in the Antarctic Peninsula
+            region.
+          </p>
+          <p>
+            In the many months that the Adélies are away from land, they’re
+            dependent on sea ice. It’s where they hunt and otherwise live. If
+            their winter habitat is diminished, so are the penguins. This is
+            currently the plight of the Adélies near the western Antarctic
+            Peninsula—the region of Antarctica that’s experienced the greatest
+            warming and greatest loss of sea ice. In addition, commercial
+            fisheries and growing numbers of whales are increasingly competing
+            for the reduced numbers of krill, a staple of the Adélie diet. This
+            penguin population has declined by 80 percent since the 1970s.
+          </p>
+          <p>
+            Other climate changes will probably affect the breeding success of
+            the Adélies. Antarctica is the driest place on earth—but with higher
+            temperatures comes more precipitation and more meltwater from
+            current snowfall and ancient glaciers. The pebbles that line an
+            Adélie nest will protect the eggs from a small amount of meltwater,
+            but a significant amount of meltwater will wash them away. And a
+            serious snowstorm can not only destroy the eggs but can bury a stoic
+            parent who tries to shelter them.
+          </p>
+          <p>
+            According to biologist David Ainley, who’s been studying Adélie
+            penguins in Antarctica for more than twenty-five years, “If global
+            warming begins to influence the more southern reaches of the
+            Antarctic continent, then the entire world’s population of Adélie
+            penguins could be at risk.”
+          </p>
+
+          <h2>Emperors</h2>
+          <figure style="float: right">
+            <img
+              src="assets/emperorhead_glenn_grant.jpg"
+              alt="Emperor penguin."
+            />
+            <figcaption>
+              An Adélie tries in vain to rescue its eggs from rising glacial
+              meltwater.
+            </figcaption>
+          </figure>
+          <p>
+            The story of the emperors is one of superlatives: They are the
+            tallest penguins, and the heaviest. They can dive the deepest. And
+            they breed and raise their chicks in the harshest environmental
+            conditions.
+          </p>
+          <p>
+            Unlike any other penguin, emperors raise their young during the
+            Antarctic winter. Undaunted by fierce winds and plummeting
+            temperatures, the mature emperors heave themselves out of the sea in
+            March and head for their breeding grounds. The trek may be a long
+            one: In the film March of the Penguins, the emperors walk about 70
+            miles (113 km), but for some other colonies, the distance is
+            considerably less. Most colonies—there maybe 25 to 30—breed on fast
+            ice along the coast, although two known colonies breed on land.
+          </p>
+          <figure style="float: right">
+            <img src="assets/emperor_kiss.jpg" alt="A typical Adélie nest." />
+            <figcaption>Emperor penguins courting.</figcaption>
+          </figure>
+          <p>
+            Courtships happen in a hurry, and in May or early June each female
+            lays a single egg that must be carefully transferred to the feet of
+            her mate. The male covers the egg with a flap of skin from its
+            abdomen called a brood pouch and incubates the egg for two months.
+            To keep warm during this dark, cold time, the papa penguins huddle
+            closely together, taking turns being on the outside and inside of
+            the group.
+          </p>
+          <p>
+            Once the eggs are safely in the care of the males, the females
+            immediately return to the sea to hunt. If all goes well, they’ll be
+            back in time to feed their newly hatched chicks. Then, like Adélie
+            parents, the adults alternate making trips to the sea to satisfy the
+            voracious appetites of their fast-growing youngsters. Eventually,
+            when the chicks are large enough to take care of themselves, the
+            parents begin to forage at the same time. In December or January,
+            all the birds make their way to the sea—a shorter distance now that,
+            with warmer temperatures, some of the fast ice has broken out.
+          </p>
+          <figure style="float: left">
+            <img src="assets/emperor-march.jpg" alt="A typical Adélie nest." />
+            <figcaption>
+              Emperors march single-file from the sea to their breeding grounds
+              in a line that may contain thousands of individuals.
+            </figcaption>
+          </figure>
+          <p>
+            The emperors have amazing adaptations that help them withstand the
+            cold, go without food for many long weeks, and make arduous trips
+            back and forth to the sea. Their adaptations for diving are
+            impressive as well. Their dives have been measured to 1800 feet (550
+            m) and dives lasting more than 20 minutes have been recorded.
+            Pressure increases with depth, which endangers gas-filled organs
+            such as the lungs, but the emperors can protect their lungs by
+            collapsing them. This stops the transfer of oxygen from the lungs to
+            the bloodstream, but the emperors conserve oxygen by slowing their
+            heart rate during dives. They also have extraordinary amounts of
+            oxygen stored in muscle tissue and can use virtually all the oxygen
+            in their bloodstream before having to surface for more.
+          </p>
+          <figure style="float: right">
+            <img
+              src="assets/groupunderwater.jpg"
+              alt="A typical Adélie nest."
+            />
+            <figcaption>
+              A group of emperor penguins dive beneath the ice, seen through an
+              underwater observation tube.
+            </figcaption>
+          </figure>
+          <p>
+            Paul Ponganis, who is both a research biologist and an
+            anesthesiologist, studies diving penguins at Antarctica’s Penguin
+            Ranch research facility with his colleague from the Scripps
+            Institution of Oceanography, Jerry Kooyman. Ponganis thinks that
+            what they learn about emperor physiology may have applications for
+            human medical care such as for stroke victims who can sustain
+            permanent damage if their brains don’t get enough oxygen.
+          </p>
+          <p>
+            Emperors have successfully survived for millennia, but as the
+            environment undergoes rapid changes, their future is uncertain.
+            Global warming may result in thin, unstable fast ice that breaks out
+            too early, drowning eggs or chicks. Emperors also seem likely to
+            face a declining food supply due both to pressure from commercial
+            fisheries and to climate change.
+          </p>
+          <p>
+            In December 2008, however, the U.S. Fish and Wildlife Service denied
+            protection under the Endangered Species Act (ESA) to the emperor
+            penguin and two other penguins it had considered, although it did
+            propose to list six penguin species. According to its news release
+            on December 17, “The Service does not have sufficient scientific
+            information to conclude that in the foreseeable future, the habitat
+            of the emperor penguin will be altered to the point where the
+            species is threatened with extinction.”
+          </p>
+        </article>
+      </main>
+
+      <aside id="sidebar">
+        <div class="sidebar-section">
+          <h3>Watch Video</h3>
+          <a class="card" href="#">
+            <img class="card-image" src="assets/poles_penguins.jpg" />
+            <p>WATCH<br />Penguins in Antarctica</p>
+          </a>
+          <a class="card" href="#">
+            <img
+              class="card-image"
+              src="assets/Emperor_penguins_in_Antarctica.jpg"
+            />
+            <p>WATCH<br />Emperor Penguins (Webcast)</p>
+          </a>
+        </div>
+        <div class="sidebar-section">
+          <h3>Location</h3>
+          <figure>
+            <img
+              src="assets/cropped_antarctica_map.png"
+              alt="A typical Adélie nest."
+            />
+            <figcaption>
+              Adélie Land (Terre Adélie), Ross Sea, Ross Island, and the
+              Antarctic Peninsula
+            </figcaption>
+          </figure>
+        </div>
+        <div class="sidebar-section">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#">Cape Royds penguin webcam</a></li>
+            <li><a href="#">David Ainley's Penguin Science Website</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-section">
+          <h3>Related Pages</h3>
+          <a class="card" href="#">
+            <img class="card-image" src="assets/i_35.jpg" />
+            <p>
+              <strong>Ross Sea Penguins</strong><br />Studying how penguins
+              respond to climate change in Antarctica
+            </p>
+          </a>
+          <a class="card" href="#">
+            <img
+              class="card-image"
+              src="assets/wildlife_krill3.thumbnail.jpg"
+            />
+            <p>
+              <strong>Krill</strong><br />Huge swarms of tiny drifters that feed
+              polar ecosystems
+            </p>
+          </a>
+          <a class="card" href="#">
+            <img class="card-image" src="assets/main_ice.jpg" />
+            <p>
+              <strong>Ice</strong><br />There's more to polar ice caps than just
+              frozen water
+            </p>
+          </a>
+          <a class="card" href="#">
+            <img
+              class="card-image"
+              src="assets/iceberg_melting21.thumbnail.jpg"
+            />
+            <p>
+              <strong>Climate Change</strong><br />Many polar regions are
+              experiencing global warming at twice the rate of other places on
+              earth
+            </p>
+          </a>
+          <a class="card" href="#">
+            <img class="card-image" src="assets/i_755.jpg" />
+            <p>
+              <strong>Antarctic Marine Ecosystem</strong><br />The Antarctic
+              food web is the simplest on the planet, and krill are at its hub.
+            </p>
+          </a>
+        </div>
+        <!-- may change -->
+        <div class="sidebar-section">
+          <h3>Dispatch Archives</h3>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
